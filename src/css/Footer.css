@@ -1,0 +1,13 @@
+footer {
+    animation: neon-border-glow 3s infinite alternate;
+  }
+  
+  @keyframes neon-border-glow {
+    from {
+      box-shadow: 0 0 10px rgba(255, 0, 127, 0.5);
+    }
+    to {
+      box-shadow: 0 0 20px rgba(255, 0, 127, 1);
+    }
+  }
+  

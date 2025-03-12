@@ -1,0 +1,61 @@
+@keyframes neon-border {
+    0% {
+      box-shadow: 0 0 5px #ff007f, 0 0 10px #ff007f, 0 0 15px #ff007f, 0 0 20px #ff007f;
+    }
+    25% {
+      box-shadow: 0 0 10px #00d9ff, 0 0 15px #00d9ff, 0 0 20px #00d9ff, 0 0 25px #00d9ff;
+    }
+    50% {
+      box-shadow: 0 0 5px #ffcc00, 0 0 10px #ffcc00, 0 0 15px #ffcc00, 0 0 20px #ffcc00;
+    }
+    75% {
+      box-shadow: 0 0 10px #00ff00, 0 0 15px #00ff00, 0 0 20px #00ff00, 0 0 25px #00ff00;
+    }
+    100% {
+      box-shadow: 0 0 5px #ff007f, 0 0 10px #ff007f, 0 0 15px #ff007f, 0 0 20px #ff007f;
+    }
+  }
+  
+  .neon-form {
+    background: rgba(20, 20, 20, 0.95);
+    padding: 2rem;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    animation: neon-border 4s infinite alternate;
+    transition: all 0.3s ease;
+  }
+  
+  .neon-input {
+    width: 100%;
+    padding: 12px;
+    background: #1a1a1a;
+    border: 2px solid #ff007f;
+    color: white;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s;
+  }
+  
+  .neon-input:focus {
+    border-color: #00d9ff;
+    box-shadow: 0 0 10px #00d9ff;
+  }
+  
+  .neon-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg, #ff007f, #00d9ff);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .neon-btn:hover {
+    box-shadow: 0 0 15px #ff007f, 0 0 25px #00d9ff;
+    transform: scale(1.05);
+  }
+  
