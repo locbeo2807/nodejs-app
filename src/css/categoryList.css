@@ -1,0 +1,73 @@
+/* Danh mục sản phẩm */
+.category-card {
+    position: relative;
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid transparent; /* Viền ban đầu là transparent */
+    background-image: linear-gradient(white, white),
+                      radial-gradient(circle, #ff00ff, #00ffff); /* Viền chớp chớp */
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    animation: blink-border 1s infinite alternate; /* Thêm hiệu ứng chớp chớp */
+  }
+  
+  /* Hiệu ứng hover */
+  .category-card:hover {
+    transform: scale(1.05); /* Tăng kích thước nhẹ khi hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Tạo bóng đổ mềm */
+    cursor: pointer;
+    background: linear-gradient(145deg, rgba(0, 255, 255, 0.2), rgba(0, 204, 255, 0.4)); /* Tạo hiệu ứng nền */
+  }
+  
+  /* Hiệu ứng viền chớp chớp mạnh mẽ */
+  @keyframes blink-border {
+    0% {
+      border-color: #ff00ff; /* Màu viền sáng */
+    }
+    25% {
+      border-color: #ffcc00; /* Chuyển sang màu vàng */
+    }
+    50% {
+      border-color: #00ffff; /* Chuyển sang màu xanh dương */
+    }
+    75% {
+      border-color: #ff00ff; /* Trở lại màu hồng */
+    }
+    100% {
+      border-color: #ffcc00; /* Kết thúc với màu vàng */
+    }
+  }
+  
+  /* Thêm hiệu ứng glow cho văn bản */
+  .category-card h3 {
+    position: absolute;
+    bottom: 5px;  /* Đặt chữ cách dưới của phần tử */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.7), 0 0 10px rgba(255, 255, 255, 0.7), 0 0 15px rgba(255, 255, 255, 0.7);
+    padding: 0 10px;  /* Thêm khoảng cách xung quanh chữ */
+  }
+  
+  /* Hiệu ứng chuyển màu nền khi hover trên ảnh */
+  .category-card img {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .category-card:hover img {
+    transform: scale(1.1); /* Zoom ảnh lên khi hover */
+  }
+  
+  /* Tạo hiệu ứng chuyển động cho text */
+  .category-card h3 {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .category-card:hover h3 {
+    opacity: 1;
+  }
+  

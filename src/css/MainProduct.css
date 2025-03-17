@@ -1,0 +1,28 @@
+/* src/css/Home.css and src/css/Products.css */
+
+/* Tạo hiệu ứng 3D khi lật trang */
+.relative {
+    perspective: 1000px;  /* Tạo không gian 3D */
+  }
+  
+  .products-page,
+  .relative {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;  /* Đảm bảo các phần tử con không bị biến dạng khi lật */
+    position: absolute;
+  }
+  
+  .product-section,
+  .product-card {
+    background-color: #333;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 1s ease;
+  }
+  
+  .product-card:hover {
+    transform: rotateY(180deg); /* Quay lại khi hover */
+  }
+  

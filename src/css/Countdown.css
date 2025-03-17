@@ -1,0 +1,44 @@
+/* Countdown Styling */
+.countdown-container {
+    display: flex;
+    justify-content: center; /* Căn giữa phần tử */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    width: 100%; /* Đảm bảo chiều rộng chiếm hết không gian */
+    max-width: 600px; /* Giới hạn chiều rộng tối đa để tránh bị giãn quá rộng */
+    gap: 20px; /* Khoảng cách giữa các phần tử */
+    margin: 0 auto; /* Căn giữa toàn bộ container */
+  }
+  
+  .time-block {
+    background-color: #ffffff;
+    padding: 20px 30px; /* Tăng kích thước padding để phần tử lớn hơn */
+    border-radius: 10px;
+    text-align: center;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tạo bóng mờ cho các khối */
+    flex: 1; /* Đảm bảo các phần tử chiếm đều không gian */
+  }
+  
+  .time-block span {
+    font-size: 3rem; /* Tăng kích thước font */
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .time-block div {
+    font-size: 1rem; /* Đặt kích thước chữ nhỏ cho phần 'HOURS', 'MINUTES' */
+    color: #666;
+    margin-top: 5px; /* Tạo khoảng cách giữa số và đơn vị */
+  }
+  
+  /* Hiệu ứng hover cho các phần tử */
+  .countdown-container .time-block:hover {
+    background-color: #f0f0f0; /* Thêm hiệu ứng hover nhẹ */
+    transform: scale(1.05); /* Tăng kích thước phần tử khi hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Bóng mờ đậm hơn khi hover */
+  }
+  
+  .countdown-container .time-block:first-child {
+    background-color: #e0e0e0; /* Thay đổi màu nền của phần tử đầu tiên */
+  }
+  

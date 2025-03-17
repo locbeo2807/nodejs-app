@@ -14,7 +14,7 @@ const Navbar = () => {
       {/* Logo LB E-Shop */}
       <div className="flex items-center space-x-3">
         <img
-          src="https://files.oaiusercontent.com/file-QoaeU2hRxq8diBwuwEEu1D?se=2025-03-10T11%3A19%3A11Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Dddb90311-3488-459f-a7de-94cef768840c.webp&sig=TBxxrmfDkUZR1z8Cf/5ZW6zS/k4LoI6Uv0nkycXtXgI%3D"
+          src="./logo.webp"
           alt="E-Shop Logo"
           className="h-12 w-auto"
         />

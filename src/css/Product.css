@@ -1,0 +1,202 @@
+/* Product Styling */
+.product-card {
+    position: relative;
+    background-color: #2d2d2d;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: 200px; /* Đảm bảo ảnh có chiều cao cố định */
+    object-fit: cover; /* Đảm bảo ảnh phủ toàn bộ khung mà không bị bóp méo */
+    border-radius: 10px; /* Thêm bo góc cho ảnh */
+    transition: transform 0.3s ease-in-out; /* Thêm hiệu ứng cho ảnh */
+  }
+  
+  .product-card:hover img {
+    transform: scale(1.05); /* Zoom ảnh lên khi hover */
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+  }
+  
+  /* Hiệu ứng giảm giá */
+  .product-card .discount {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #ff4081;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+  
+  /* Hiển thị tên và giá */
+  .product-card .product-info {
+    padding: 15px;
+  }
+  
+  .product-card .product-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .product-card .product-price {
+    font-size: 16px;
+    color: #bbb;
+    text-decoration: line-through;
+  }
+  
+  .product-card .product-discounted-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff4081;
+  }
+  
+  /* Nút "Buy Now" */
+  .product-card button {
+    background-color: #4c6ef5; /* Màu nền nút */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    width: 100%;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    font-size: 1.1rem; /* Kích thước chữ */
+  }
+  
+  /* Hiệu ứng hover */
+  .product-card button:hover {
+    background-color: #3a5bbd; /* Màu nền khi hover */
+    transform: scale(1.05); /* Phóng to nút nhẹ khi hover */
+    box-shadow: 0 4px 20px rgba(58, 91, 189, 0.5); /* Tạo bóng đổ cho nút khi hover */
+    cursor: pointer; /* Thay đổi con trỏ khi hover */
+  }
+  
+  /* Thêm hiệu ứng active cho nút khi click */
+  .product-card button:active {
+    transform: scale(1); /* Giảm kích thước khi click */
+    box-shadow: 0 2px 10px rgba(58, 91, 189, 0.2); /* Bóng mờ nhẹ khi click */
+  }
+  
+  
+  /* Hot Products Section */
+  .hot-products-section {
+    background-color: #3b82f6; /* Blue background */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .hot-products-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    flex: 1;
+  }
+  /* Feature Item */
+.feature-item {
+    background-color: #333333;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Bóng mờ nhẹ */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative; /* Đảm bảo các phần tử bên trong sẽ không bị tràn */
+    border: 3px solid transparent; /* Viền ban đầu trong suốt */
+    padding: 20px;
+  }
+  
+  /* Hiệu ứng hover với viền màu */
+  .feature-item:hover {
+    transform: scale(1.05); /* Phóng to nhẹ khi hover */
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5); /* Bóng mờ mạnh hơn */
+    animation: borderEffect 1s infinite; /* Áp dụng hiệu ứng viền */
+  }
+  
+  /* Hiệu ứng chuyển động viền xung quanh */
+  @keyframes borderEffect {
+    0% {
+      border-color: #ff4081; /* Màu viền ban đầu */
+    }
+    25% {
+      border-color: #4caf50; /* Màu viền khi qua 1/4 chu kỳ */
+    }
+    50% {
+      border-color: #2196f3; /* Màu viền khi qua 1/2 chu kỳ */
+    }
+    75% {
+      border-color: #ff4081; /* Quay lại màu viền ban đầu */
+    }
+    100% {
+      border-color: #ff4081; /* Màu viền cuối cùng */
+    }
+  }
+  
+  /* Hiệu ứng hover cho icon */
+  .feature-item:hover .feature-icon {
+    color: white; /* Đổi màu icon khi hover */
+    transform: scale(1.2); /* Tăng kích thước icon khi hover */
+  }
+  
+  /* Hiệu ứng khi hover cho các phần tử text */
+  .feature-item h4, .feature-item p {
+    color: #fff; /* Đảm bảo chữ trắng khi hover */
+    transition: color 0.3s ease;
+  }
+  
+  .feature-item:hover h4 {
+    color: #fff; /* Đổi màu chữ khi hover */
+  }
+  
+  .feature-item:hover p {
+    color: #f1f1f1; /* Làm cho mô tả sáng lên khi hover */
+  }
+  
+  /* Hiệu ứng quay icon khi hover */
+  .feature-item img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+  }
+  
+  .feature-item:hover img {
+    transform: rotate(15deg); /* Quay nhẹ icon khi hover */
+    filter: brightness(1.2); /* Làm sáng icon khi hover */
+  }
+  .features-section {
+    background: linear-gradient(145deg, #2e2e2e, #4c4c4c); /* Nền gradient với màu xám đậm */
+    padding: 40px 20px;
+    border-radius: 12px;
+    margin-top: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Hiệu ứng bóng mờ */
+  }
+  
+  .features-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ff4081; /* Màu hồng neon sáng */
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+    text-shadow: 0 0 10px #ff4081, 0 0 20px #ff4081; /* Hiệu ứng glow cho tiêu đề */
+  }  
+  
