@@ -1,0 +1,79 @@
+/* Dark Mode Styles */
+body.dark {
+    background-color: #181818;
+    color: white;
+  }
+  
+  body.light {
+    background-color: white;
+    color: black;
+  }
+  
+  .main-content {
+    width: calc(100% - 250px);
+    margin-left: 250px;
+  }
+  
+  .top-bar {
+    background-color: #181818;
+    padding: 1rem;
+    color: white;
+  }
+  
+  .theme-toggle {
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .user-icon {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-icon span {
+    font-size: 18px;
+    color: white;
+    margin-left: 10px;
+  }
+  
+  .stats-card {
+    background-color: #2c2c2c;
+    margin-bottom: 1rem;
+  }
+  
+  .stats-card .text-green-500 {
+    color: #28a745;
+  }
+  
+  .table-auto {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table-auto th,
+  .table-auto td {
+    padding: 1rem;
+    border: 1px solid #444;
+  }
+  
+  .table-auto th {
+    background-color: #333;
+  }
+  
+  .w-full {
+    width: 100%;
+  }
+  
+  .h-96 {
+    height: 24rem;
+  }
+  
+  /* Dark mode elements styling */
+  body.dark .top-bar {
+    background-color: #181818;
+  }
+  
+  body.dark .stats-cards {
+    background-color: #2c2c2c;
+  }
+  
